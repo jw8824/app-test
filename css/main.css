@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    background-color: aliceblue;
+}
+
+#wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: thistle;
+}
+
+
+.header {
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+}
+
+.header .inner {
+    /* inner 영역 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 100%;
+    width: 100%;
+}
+
+/* logo */
+.header .inner .logo img {
+    height: 30px;
+    display: block;
+}
+
+/* header_btns */
+.header .inner .header_btns {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header .inner .header_btns button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+}
+
+.header .inner .header_btns button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .inner .item {
+    width: 100%;
+    height: 600px;
+}
+
+.header .inner .item image {}
+
+.header .inner .item image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
